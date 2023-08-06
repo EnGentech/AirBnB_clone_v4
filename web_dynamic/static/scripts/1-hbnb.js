@@ -9,7 +9,7 @@ $(document).ready(function(){
         
         my_list.push(amenityName)
         
-        $('.amenities h4').text(my_list.join(', '))
+        $('.amenities h4').text(my_list.sort().join(', '))
         
     }
     else if (!$(this).is(':checked')){
