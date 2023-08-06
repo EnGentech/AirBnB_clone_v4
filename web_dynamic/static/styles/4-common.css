@@ -9,3 +9,12 @@ body .container {
     max-width: 1000px;
     margin: 30px auto;
 }
+
+.check{
+    margin-right: 10px;
+    
+}
+
+.amenities h4{
+    height: 1px; 
+}
