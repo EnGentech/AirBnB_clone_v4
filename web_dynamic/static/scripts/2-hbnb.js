@@ -19,4 +19,12 @@ $(document).ready(function () {
       $('.amenities h4').text(my_list);
     }
   });
+  url = 'http://0.0.0.0:5001/api/v1/status/'; /* 'https://jsonplaceholder.typicode.com/posts/1'  :test_link */
+  $.get(url, function (data, status) {
+    if (status === 'success') {
+      $('#api_status').addClass('available');
+    } else {
+      $('#api_status').removeClass('available');
+    }
+  });
 });
